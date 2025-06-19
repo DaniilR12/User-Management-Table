@@ -32,7 +32,7 @@ const UserTable: React.FC = () => {
 
   const filteredData = data.filter((item) =>
     Object.entries(filters).every(([key, value]) =>
-      item[key as keyof DataType].toLowerCase().startsWith(value.toLowerCase())
+      item[key as keyof DataType].toLowerCase().includes(value.toLowerCase())
     )
   );
 
