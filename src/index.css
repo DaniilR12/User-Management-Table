@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-height: 100vh;
+  justify-content: center;
+}
+
+input {
+  height: 28px;
+  border: 1px solid #f0f0f0;
+}
+
+input:focus {
+  outline: none ;
+  box-shadow: none ;
+}
